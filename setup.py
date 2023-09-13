@@ -14,10 +14,10 @@ from setuptools import setup
 REQUIRED_PACKAGES = [
     'absl-py',
     'attrs',
-    'chex',
+    'chex==0.0.5',
     'jax==0.2.12',
     'jaxlib==0.1.65+cuda102',
-    'kfac_ferminet_alpha @ git+https://github.com/deepmind/deepmind_research#egg=kfac_ferminet_alpha&subdirectory=kfac_ferminet_alpha',  # pylint: disable=line-too-long
+    'kfac_ferminet_alpha @ git+https://github.com/deepmind/deepmind_research@ac7a19a9b25cf60711d8d655f07e4c5ebb25629b#egg=kfac_ferminet_alpha&subdirectory=kfac_ferminet_alpha',
     'ml-collections',
     'optax',
     'numpy',
@@ -26,7 +26,7 @@ REQUIRED_PACKAGES = [
     'pyblock',
     'scipy',
     'tables',
-    'ferminet @ git+https://github.com/deepmind/ferminet.git@jax'
+    # 'ferminet @ git+https://github.com/deepmind/ferminet.git@jax'
 ]
 
 
